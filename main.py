@@ -38,7 +38,7 @@ try:
     EMAIL_PASSWORD = os.environ["EMAIL_PASSWORD"]
 
 except:
-    print("EMAIL_PASSWORD TOKEN NOT FOUND")
+    logger.info('EMAIL_PASSWORD TOKEN NOT FOUND')
 
 # =======================
 # Functions
@@ -83,7 +83,7 @@ if new_hash != old_hash:
         f.write(new_hash)
 
     send_mail()
-    logger.info('Manual değişti → mail gönderildi.')
+    logger.info('Manual CHANGED → mail sent.')
 else:
-    logger.info('Manual değişmedi')
+    logger.info('Manual unchanged')
 

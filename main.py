@@ -35,7 +35,7 @@ EMAIL_FROM = "teamgoldenhorn@gmail.com"
 EMAIL_TO = "teamgoldenhorn@gmail.com"
 
 try:
-    EMAIL_PASSWORD = "mzzs zkrx yuem uxbv"
+    EMAIL_PASSWORD = os.environ["EMAIL_PASSWORD"]
 
 except:
     print("EMAIL_PASSWORD TOKEN NOT FOUND")

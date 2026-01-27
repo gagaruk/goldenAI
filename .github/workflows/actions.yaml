@@ -7,6 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # This allows the bot to push code
     steps:
 
       - name: checkout repo content
